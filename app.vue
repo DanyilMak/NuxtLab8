@@ -1,8 +1,8 @@
 <template>
   <div>
-    <StudentList />
+    <NuxtPage />
   </div>
 </template>
 <script>
-import StudentList from '`/pages/studentlist.vue'
+import ProductList from '~/pages/productlist.vue'
 </script>
