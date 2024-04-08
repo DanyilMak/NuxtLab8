@@ -62,12 +62,12 @@ const paginatedRows = computed(() => {
     </div>
 
     <UTable :rows="paginatedRows" :columns="columns">
-      <template #rating-data="{ row }"> <!-- Додано шаблон rating-data -->
+      <template #rating-data="{ row }">
         <span :style="{ color: row.rating > 4.5 ? 'green' : 'red' }">
           {{ row.rating }}
         </span>
       </template>
-      <template #thumbnail-data="{ row }"> <!-- Додано шаблон thumbnail-data -->
+      <template #thumbnail-data="{ row }">
         <img class="w-[100px] h-[100px]" :src="row.thumbnail" alt="Thumbnail" />
       </template>
     </UTable>
